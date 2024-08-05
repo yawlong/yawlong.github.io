@@ -3,74 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>Yua Zhang's Research Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-        }
-        .navbar {
-            margin-bottom: 20px;
+            background-color: #f8f9fa;
         }
         .container {
             max-width: 900px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .footer {
             margin-top: 20px;
             text-align: center;
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+        .profile-img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+        }
+        .header-info {
+            margin-left: 20px;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">My Page</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
     <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">Welcome to My GitHub Page!</h1>
-            <p class="lead">This is a simple example of a personal homepage created using GitHub Pages.</p>
-            <hr class="my-4">
-            <p>Use this space to introduce yourself and showcase your projects and accomplishments.</p>
-        </div>
+        <header class="header">
+            <img src="photo.jpg" alt="Yua Zhang" class="profile-img">
+            <div class="header-info">
+                <h1>Yua Zhang</h1>
+                <p>Researcher<br>
+                abc Lab<br>
+                Beijing, China.<br>
+                Email: <a href="mailto:zhyyuan@gmail.com">zhyyuan@gmail.com</a></p>
+            </div>
+        </header>
 
-        <div class="row">
-            <div class="col-md-4">
-                <h2>About Me</h2>
-                <p>Introduce yourself. What are your interests? What do you work on?</p>
-            </div>
-            <div class="col-md-4">
-                <h2>Projects</h2>
-                <p>Highlight some of your projects. What are you proud of?</p>
-            </div>
-            <div class="col-md-4">
-                <h2>Contact</h2>
-                <p>How can people get in touch with you?</p>
-            </div>
-        </div>
+        <section>
+            <h2>About me</h2>
+            <p>I'm currently a Researcher at abc Laboratory. I was a visiting Ph.D. student at the University of Surrey.</p>
+            <p>My research interests include computer network architecture, routing lookup, network security, and network measurement.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <h3>Ph.D., T University</h3>
+            <p>2011.9 to 2016.6<br>
+            Major: Computer Network<br>
+            Department of Computer Science & Technology<br>
+            Supervisor: Prof. Dr. M</p>
+
+            <h3>Visiting Ph.D., University of Surrey</h3>
+            <p>2014.4 to 2014.9<br>
+            5G Innovation Centre<br>
+            Supervisor: Prof. Dr. N</p>
+
+            <h3>B.E., Beijing University of Posts and Telecommunications (BUPT)</h3>
+            <p>2007.9 to 2011.7<br>
+            Major: Computer Science & Technology<br>
+            School of Computer Science & Technology</p>
+        </section>
+
+        <section>
+            <h2>Work</h2>
+            <h3>Researcher, abc lab</h3>
+            <p>2022.9 - Present</p>
+
+            <h3>Researcher, Ab lab</h3>
+            <p>2016.7 - 2022.8<br>
+            Research and Development Center</p>
+        </section>
+
+        <section>
+            <h2>Selected Publications</h2>
+            <p>Yuanyuan Zhang, Mingwei Xu, Fei Liang, Ning Wang, Penghan Chen. Compressing IP Forwarding Tables with Small Bounded Update Time. Computer Networks, 2016, 106(C):77-90.</p>
+            <p>Yuanyuan Zhang, Mingwei Xu, Penghan Chen, Ning Wang. IP lookup using minimal perfect hashing. IEEE 24th International Symposium on Quality of Service (IWQoS), Beijing, China, June 20-21, 2016.</p>
+        </section>
     </div>
 
     <footer class="footer">
-        <p>&copy; 2024 My GitHub Page</p>
+        <p>&copy; 2024 Yua Zhang</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -78,5 +100,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
