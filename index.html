@@ -28,11 +28,17 @@
         .right-column {
             padding-left: 20px;
         }
-        .right-column h2, .right-column h3 {
+        h2 {
+            font-size: 24px; /* 设置h2标题的字号大小 */
             margin-top: 20px;
         }
-        .right-column p, .right-column ul {
-            margin-bottom: 20px;
+        h3 {
+            font-size: 16px; /* 设置h3标题的字号大小 */
+            margin-top: 20px;
+        }
+        p, ul {
+            font-size: 16px; /* 设置正文字号大小 */
+            margin-bottom: 20px; /* 设置段落和列表项的底部间距 */
         }
         .publication-list li {
             margin-bottom: 10px;
@@ -45,6 +51,23 @@
             text-align: center;
             font-size: 0.9em;
             color: #6c757d;
+        }
+        .education-list, .work-list {
+            list-style-type: none; /* 移除默认的列表样式 */
+            padding-left: 0; /* 移除左侧填充 */
+        }
+        .education-list li, .work-list li {
+            margin-bottom: 20px; /* 增加项目间距 */
+        }
+        .education-list li::before, .work-list li::before {
+            content: "• "; /* 添加项目符号 */
+            color: #007bff; /* 设置符号颜色 */
+            font-weight: bold; /* 设置符号粗体 */
+        }
+        .education-list h3::before, .work-list h3::before {
+            content: "◦ "; /* 添加子项目符号 */
+            color: #6c757d; /* 设置子符号颜色 */
+            font-weight: normal; /* 设置子符号普通 */
         }
     </style>
 </head>
@@ -68,31 +91,42 @@
 
                 <section>
                     <h2>Education</h2>
-                    <h3>Ph.D., T University</h3>
-                    <p>2011.9 to 2016.6<br>
-                    Major: Computer Network<br>
-                    Department of Computer Science & Technology<br>
-                    Supervisor: Prof. Dr. M</p>
-
-                    <h3>Visiting Ph.D., University of Surrey</h3>
-                    <p>2014.4 to 2014.9<br>
-                    5G Innovation Centre<br>
-                    Supervisor: Prof. Dr. N</p>
-
-                    <h3>B.E., Beijing University of Posts and Telecommunications (BUPT)</h3>
-                    <p>2007.9 to 2011.7<br>
-                    Major: Computer Science & Technology<br>
-                    School of Computer Science & Technology</p>
+                    <ul class="education-list">
+                        <li>
+                            <h3>Ph.D., T University</h3>
+                            <p>2011.9 to 2016.6<br>
+                            Major: Computer Network<br>
+                            Department of Computer Science & Technology<br>
+                            Supervisor: Prof. Dr. M</p>
+                        </li>
+                        <li>
+                            <h3>Visiting Ph.D., University of Surrey</h3>
+                            <p>2014.4 to 2014.9<br>
+                            5G Innovation Centre<br>
+                            Supervisor: Prof. Dr. N</p>
+                        </li>
+                        <li>
+                            <h3>B.E., Beijing University of Posts and Telecommunications (BUPT)</h3>
+                            <p>2007.9 to 2011.7<br>
+                            Major: Computer Science & Technology<br>
+                            School of Computer Science & Technology</p>
+                        </li>
+                    </ul>
                 </section>
 
                 <section>
                     <h2>Work</h2>
-                    <h3>Researcher, abc lab</h3>
-                    <p>2022.9 - Present</p>
-
-                    <h3>Researcher, Ab lab</h3>
-                    <p>2016.7 - 2022.8<br>
-                    Research and Development Center</p>
+                    <ul class="work-list">
+                        <li>
+                            <h3>Researcher, abc lab</h3>
+                            <p>2022.9 - Present</p>
+                        </li>
+                        <li>
+                            <h3>Researcher, Ab lab</h3>
+                            <p>2016.7 - 2022.8<br>
+                            Research and Development Center</p>
+                        </li>
+                    </ul>
                 </section>
 
                 <section>
