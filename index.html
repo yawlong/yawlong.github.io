@@ -56,7 +56,7 @@
         }
         .education-list, .work-list {
             list-style-type: none; /* 移除默认的列表样式 */
-            padding-left: 0; /* 移除左侧填充 */
+            padding-left: 20px; /* 设置合适的左侧填充 */
         }
         .education-list li, .work-list li {
             margin-bottom: 20px; /* 增加项目间距 */
@@ -65,6 +65,11 @@
             content: "• "; /* 添加项目符号 */
             color: #000000; /* 设置子符号颜色 */
             font-weight: bold; /* 设置符号粗体 */
+        }
+        .list-item::before {
+            content: "○ "; /* 添加项目符号，符号是一个灰色的空心圆 */
+            color: #6c757d; /* 设置符号颜色为灰色 */
+            font-weight: normal; /* 设置符号普通 */
         }
     </style>
 </head>
@@ -91,20 +96,20 @@
                     <ul class="education-list">
                         <li>
                             <h3>Ph.D., Tsinghua University</h3>
-                            <p>2011.9 to 2016.6<br>
+                            <p class="list-item">2011.9 to 2016.6<br>
                             Major: Computer Network<br>
                             Department of Computer Science & Technology<br>
                             Supervisor: Prof. Dr. Mingwei Xu</p>
                         </li>
                         <li>
                             <h3>Visiting Ph.D., University of Surrey</h3>
-                            <p>2014.4 to 2014.9<br>
+                            <p class="list-item">2014.4 to 2014.9<br>
                             5G Innovation Centre<br>
                             Supervisor: Prof. Dr. Ning Wang</p>
                         </li>
                         <li>
                             <h3>B.E., Beijing University of Posts and Telecommunications (BUPT)</h3>
-                            <p>2007.9 to 2011.7<br>
+                            <p class="list-item">2007.9 to 2011.7<br>
                             Major: Computer Science & Technology<br>
                             School of Computer Science & Technology</p>
                         </li>
@@ -116,11 +121,11 @@
                     <ul class="work-list">
                         <li>
                             <h3>Researcher, Zhongguancun Laboratory</h3>
-                            <p>2022.9 - Present</p>
+                            <p class="list-item">2022.9 - Present</p>
                         </li>
                         <li>
-                            <h3>Researcher,  Agricultural Bank of China</h3>
-                            <p>2016.7 - 2022.8<br>
+                            <h3>Researcher, Agricultural Bank of China</h3>
+                            <p class="list-item">2016.7 - 2022.8<br>
                             Research and Development Center</p>
                         </li>
                     </ul>
@@ -141,7 +146,7 @@
     </div>
 
     <footer class="footer">
-        <p>&copy; 2024 Yua Zhang</p>
+        <p>&copy; 2024 Yuanyuan Zhang</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
