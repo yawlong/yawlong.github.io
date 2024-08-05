@@ -11,87 +11,86 @@
             background-color: #f8f9fa;
         }
         .container {
-            max-width: 900px;
-            margin: 20px auto;
-            background-color: #ffffff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .footer {
             margin-top: 20px;
-            text-align: center;
-            font-size: 0.9em;
-            color: #6c757d;
         }
         .profile-img {
             max-width: 150px;
             margin-bottom: 20px;
         }
-        .header {
-            display: flex;
-            align-items: center;
+        .left-column {
+            border-right: 1px solid #dee2e6;
+            padding-right: 20px;
         }
-        .header-info {
-            margin-left: 20px;
+        .right-column {
+            padding-left: 20px;
+        }
+        .publication-list li {
+            margin-bottom: 10px;
+        }
+        .publication-list .author {
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <img src="photo.jpg" alt="Yua Zhang" class="profile-img">
-            <div class="header-info">
-                <h1>Yua Zhang</h1>
+        <div class="row">
+            <div class="col-md-4 left-column text-center">
+                <img src="photo.jpg" alt="Yua Zhang" class="profile-img img-fluid">
+                <h2>Yua Zhang</h2>
                 <p>Researcher<br>
                 abc Lab<br>
                 Beijing, China.<br>
                 Email: <a href="mailto:zhyyuan@gmail.com">zhyyuan@gmail.com</a></p>
             </div>
-        </header>
+            <div class="col-md-8 right-column">
+                <section>
+                    <h2>About me</h2>
+                    <p>I'm currently a Researcher at abc Laboratory. I was a visiting Ph.D. student at the University of Surrey.</p>
+                    <p>My research interests include computer network architecture, routing lookup, network security, and network measurement.</p>
+                </section>
 
-        <section>
-            <h2>About me</h2>
-            <p>I'm currently a Researcher at abc Laboratory. I was a visiting Ph.D. student at the University of Surrey.</p>
-            <p>My research interests include computer network architecture, routing lookup, network security, and network measurement.</p>
-        </section>
+                <section>
+                    <h2>Education</h2>
+                    <h3>Ph.D., T University</h3>
+                    <p>2011.9 to 2016.6<br>
+                    Major: Computer Network<br>
+                    Department of Computer Science & Technology<br>
+                    Supervisor: Prof. Dr. M</p>
 
-        <section>
-            <h2>Education</h2>
-            <h3>Ph.D., T University</h3>
-            <p>2011.9 to 2016.6<br>
-            Major: Computer Network<br>
-            Department of Computer Science & Technology<br>
-            Supervisor: Prof. Dr. M</p>
+                    <h3>Visiting Ph.D., University of Surrey</h3>
+                    <p>2014.4 to 2014.9<br>
+                    5G Innovation Centre<br>
+                    Supervisor: Prof. Dr. N</p>
 
-            <h3>Visiting Ph.D., University of Surrey</h3>
-            <p>2014.4 to 2014.9<br>
-            5G Innovation Centre<br>
-            Supervisor: Prof. Dr. N</p>
+                    <h3>B.E., Beijing University of Posts and Telecommunications (BUPT)</h3>
+                    <p>2007.9 to 2011.7<br>
+                    Major: Computer Science & Technology<br>
+                    School of Computer Science & Technology</p>
+                </section>
 
-            <h3>B.E., Beijing University of Posts and Telecommunications (BUPT)</h3>
-            <p>2007.9 to 2011.7<br>
-            Major: Computer Science & Technology<br>
-            School of Computer Science & Technology</p>
-        </section>
+                <section>
+                    <h2>Work</h2>
+                    <h3>Researcher, abc lab</h3>
+                    <p>2022.9 - Present</p>
 
-        <section>
-            <h2>Work</h2>
-            <h3>Researcher, abc lab</h3>
-            <p>2022.9 - Present</p>
+                    <h3>Researcher, Ab lab</h3>
+                    <p>2016.7 - 2022.8<br>
+                    Research and Development Center</p>
+                </section>
 
-            <h3>Researcher, Ab lab</h3>
-            <p>2016.7 - 2022.8<br>
-            Research and Development Center</p>
-        </section>
-
-        <section>
-            <h2>Selected Publications</h2>
-            <p>Yuanyuan Zhang, Mingwei Xu, Fei Liang, Ning Wang, Penghan Chen. Compressing IP Forwarding Tables with Small Bounded Update Time. Computer Networks, 2016, 106(C):77-90.</p>
-            <p>Yuanyuan Zhang, Mingwei Xu, Penghan Chen, Ning Wang. IP lookup using minimal perfect hashing. IEEE 24th International Symposium on Quality of Service (IWQoS), Beijing, China, June 20-21, 2016.</p>
-        </section>
+                <section>
+                    <h2>Selected Publications</h2>
+                    <ul class="publication-list">
+                        <li><span class="author">Yuanyuan Zhang</span>, Mingwei Xu, Fei Liang, Ning Wang, Penghan Chen. Compressing IP Forwarding Tables with Small Bounded Update Time. Computer Networks, 2016, 106(C):77-90.</li>
+                        <li><span class="author">Yuanyuan Zhang</span>, Mingwei Xu, Penghan Chen, Ning Wang. IP lookup using minimal perfect hashing. IEEE 24th International Symposium on Quality of Service (IWQoS), Beijing, China, June 20-21, 2016.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer text-center">
         <p>&copy; 2024 Yua Zhang</p>
     </footer>
 
