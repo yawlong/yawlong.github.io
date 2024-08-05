@@ -12,6 +12,9 @@
         }
         .container {
             margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .profile-img {
             max-width: 150px;
@@ -20,9 +23,16 @@
         .left-column {
             border-right: 1px solid #dee2e6;
             padding-right: 20px;
+            text-align: center;
         }
         .right-column {
             padding-left: 20px;
+        }
+        .right-column h2, .right-column h3 {
+            margin-top: 20px;
+        }
+        .right-column p, .right-column ul {
+            margin-bottom: 20px;
         }
         .publication-list li {
             margin-bottom: 10px;
@@ -30,12 +40,18 @@
         .publication-list .author {
             font-weight: bold;
         }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #6c757d;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-4 left-column text-center">
+            <div class="col-md-4 left-column">
                 <img src="photo.jpg" alt="Yua Zhang" class="profile-img img-fluid">
                 <h2>Yua Zhang</h2>
                 <p>Researcher<br>
@@ -90,7 +106,7 @@
         </div>
     </div>
 
-    <footer class="footer text-center">
+    <footer class="footer">
         <p>&copy; 2024 Yua Zhang</p>
     </footer>
 
